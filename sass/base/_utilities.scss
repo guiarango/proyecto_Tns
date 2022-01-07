@@ -1,0 +1,37 @@
+@media (min-width: 460px) {
+  .main-header__navigation {
+    &--search {
+      display: flex;
+      flex-direction: row;
+      justify-content: center !important;
+      align-items: center;
+      & > * {
+        margin: 1rem 4rem;
+      }
+    }
+    &--background,
+    &--button {
+      display: none !important;
+    }
+    &--navBar {
+      display: block !important;
+      background-color: rgba(black, 0.9);
+      font-size: 2rem;
+      ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        li {
+          margin: 1rem 3rem;
+          .sale {
+            color: red;
+          }
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

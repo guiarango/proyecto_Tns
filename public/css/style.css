@@ -1,0 +1,180 @@
+@keyframes changingColorBanner {
+  0% {
+    background-color: red; }
+  33% {
+    background-color: orange; }
+  66% {
+    background-color: maroon; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 8px; }
+
+header,
+main,
+footer {
+  width: 95vw;
+  margin: 1rem auto; }
+
+html {
+  font-family: "Roboto"; }
+
+@media (min-width: 460px) {
+  .main-header__navigation--search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center; }
+    .main-header__navigation--search > * {
+      margin: 1rem 4rem; }
+  .main-header__navigation--background, .main-header__navigation--button {
+    display: none !important; }
+  .main-header__navigation--navBar {
+    display: block !important;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 2rem; }
+    .main-header__navigation--navBar ul {
+      display: flex;
+      justify-content: center;
+      list-style: none; }
+      .main-header__navigation--navBar ul li {
+        margin: 1rem 3rem; }
+        .main-header__navigation--navBar ul li .sale {
+          color: red; }
+        .main-header__navigation--navBar ul li a {
+          text-decoration: none;
+          color: white; } }
+
+.main-header__navigation {
+  position: fixed;
+  top: 0;
+  display: relative;
+  width: 95vw;
+  margin: auto;
+  z-index: 10;
+  background-color: white; }
+  .main-header__navigation .main-header__initialBanner {
+    background-color: red;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    animation: changingColorBanner 10s infinite; }
+    .main-header__navigation .main-header__initialBanner a {
+      text-decoration: none;
+      color: white;
+      transition: 0.4s; }
+      .main-header__navigation .main-header__initialBanner a:hover {
+        color: #c2c458; }
+  .main-header__navigation--search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; }
+    .main-header__navigation--search form {
+      display: flex;
+      align-items: center;
+      height: 4rem; }
+      .main-header__navigation--search form .search-content,
+      .main-header__navigation--search form .search-content:active {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        outline: none; }
+      .main-header__navigation--search form input {
+        background-color: none;
+        height: 3rem; }
+    .main-header__navigation--search i {
+      font-size: 2.5rem; }
+  .main-header__navigation--navBar {
+    display: none; }
+  .main-header__navigation--checkbox {
+    display: none; }
+  .main-header__navigation--checkbox:checked ~ .main-header__navigation--background {
+    transition: 0.3s;
+    transform: scale(80); }
+  .main-header__navigation--checkbox:not(:checked) ~ .main-header__navigation_--background {
+    transition: 0.3s;
+    transform: scale(1); }
+  .main-header__navigation--button, .main-header__navigation--background {
+    height: 5rem;
+    width: 5rem;
+    right: 0; }
+  .main-header__navigation--button {
+    position: absolute;
+    z-index: 21;
+    text-align: center;
+    cursor: pointer; }
+  .main-header__navigation--background {
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 20; }
+  .main-header__navigation--icon {
+    position: relative;
+    margin-top: 2rem; }
+    .main-header__navigation--icon, .main-header__navigation--icon::after, .main-header__navigation--icon::before {
+      width: 3rem;
+      height: 2px;
+      background-color: white;
+      display: inline-block; }
+    .main-header__navigation--icon::after, .main-header__navigation--icon::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s; }
+    .main-header__navigation--icon::before {
+      top: -0.8rem; }
+    .main-header__navigation--icon::after {
+      top: 0.8rem; }
+  .main-header__navigation--button:hover .main-header__navigation--icon:before {
+    top: -1rem; }
+  .main-header__navigation--button:hover .main-header__navigation--icon:after {
+    top: 1rem; }
+  .main-header__navigation--checkbox:checked + .main-header__navigation--button .main-header__navigation--icon {
+    background-color: transparent; }
+  .main-header__navigation--checkbox:checked + .main-header__navigation--button .main-header__navigation--icon::before {
+    top: 0;
+    transform: rotate(135deg); }
+  .main-header__navigation--checkbox:checked + .main-header__navigation--button .main-header__navigation--icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
+
+.main-header__banner img {
+  width: 100%;
+  margin-top: 10rem; }
+
+.main__categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #cacaca; }
+  .main__categories > * {
+    height: 15rem;
+    width: 15rem;
+    margin: 1rem 3rem;
+    border-radius: 50%;
+    border: solid 1px black; }
+    .main__categories > *:hover i {
+      transform: scale(1.15); }
+    .main__categories > * a {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      color: black; }
+      .main__categories > * a .male {
+        color: #297272; }
+      .main__categories > * a .female {
+        color: #6e346e; }
+      .main__categories > * a i {
+        font-size: 5rem; }
+      .main__categories > * a p {
+        font-size: 2rem;
+        font-weight: bold; }

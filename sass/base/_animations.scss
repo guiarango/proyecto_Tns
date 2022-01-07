@@ -1,0 +1,41 @@
+@keyframes changingColorBanner {
+  0% {
+    background-color: red;
+  }
+  33% {
+    background-color: orange;
+  }
+  66% {
+    background-color: maroon;
+  }
+}
+
+// @keyframes moveAround {
+//   // 0% {
+
+//   // }
+//   44% {
+//     transform: translateX(-55%);
+//     opacity: 1;
+//   }
+
+//   45% {
+//     opacity: 0;
+//   }
+//   50% {
+//     transform: translateX(55%);
+//     opacity: 0;
+//   }
+//   53% {
+//     opacity: 0;
+//   }
+//   55% {
+//     opacity: 1;
+//   }
+//   // 51% {
+//   //   right: -10rem;
+//   // }
+//   100% {
+//     transform: translateX(0);
+//   }
+// }
