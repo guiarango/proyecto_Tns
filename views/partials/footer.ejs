@@ -1,0 +1,57 @@
+<footer class="main-footer">
+  <section class="main-footer__mainContact">
+    <ul>
+      <li><a href="#">Acerca de nosotros</a></li>
+      <li><a href="#">Contáctanos</a></li>
+      <li><a href="#">Trabaja con nosotros</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Preguntas frecuentes</a></li>
+      <li><a href="#">Cómo comprar</a></li>
+      <li><a href="#">Guía de tallas</a></li>
+    </ul>
+  </section>
+  <section class="main-footer__mainForm">
+    <form action="#" method="POST" class="main-footer__mainForm--form">
+      <h2>¡Regístrate para recibir más ofertas!</h2>
+      <label for="name">Nombre completo</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        minlength="2"
+        maxlength="50"
+        required
+      />
+      <label for="email">Correo electrónico</label>
+      <input type="email" name="email" id="email" required />
+      <label for="birthday">Fecha de nacimiento</label>
+      <input type="date" name="birthday" id="birthday" required />
+      <label for="idselect">Tipo de documento</label>
+      <select name="idselect" id="idselect" required>
+        <option value="cedulaCiudadania">Cédula de ciudadanía</option>
+        <option value="tarjetaIdentidad">Tarjeta de identidad</option>
+        <option value="CedulaExtranjería">Cédula de extranjería</option>
+      </select>
+      <label for="id">Número de documento</label>
+      <input
+        type="number"
+        name="id"
+        id="id"
+        minlength="4"
+        maxlength="12"
+        required
+      />
+
+      <label for="checkbox" class="label-checkbox">
+        <input
+          type="checkbox"
+          id="checkbox"
+          name="tycCheckbox"
+          value="accept"
+          required
+        />Acepto términos y condiciones</label
+      >
+      <button type="submit">Registrarse</button>
+    </form>
+  </section>
+</footer>

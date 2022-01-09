@@ -1,4 +1,8 @@
 @media (min-width: 460px) {
+  html {
+    font-size: 7px;
+  }
+
   .main-header__navigation {
     &--search {
       display: flex;
@@ -16,13 +20,14 @@
     &--navBar {
       display: block !important;
       background-color: rgba(black, 0.9);
-      font-size: 2rem;
       ul {
         display: flex;
         justify-content: center;
         list-style: none;
         li {
           margin: 1rem 3rem;
+          color: white;
+          opacity: 1 !important;
           .sale {
             color: red;
           }
@@ -33,5 +38,19 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 520px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 600px) {
+  .main-footer {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
   }
 }

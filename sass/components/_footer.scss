@@ -1,0 +1,44 @@
+.main-footer {
+  background-color: #112049;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  &__mainContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-size: 2rem;
+    ul {
+      li {
+        list-style: none;
+        margin: 1rem 0;
+        a {
+          color: white;
+          text-decoration: none;
+          transition: 0.3s;
+          &:hover {
+            color: #c2c458;
+          }
+        }
+      }
+    }
+  }
+  &__mainForm {
+    font-size: 2rem;
+    &--form {
+      display: flex;
+      flex-direction: column;
+      .label-checkbox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      & > * {
+        margin: 0.2rem 0.5rem;
+      }
+    }
+  }
+}

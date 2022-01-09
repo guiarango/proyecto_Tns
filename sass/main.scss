@@ -7,8 +7,10 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/carrousel";
 @import "components/footer";
 @import "components/navigation";
 
 @import "pages/mainTennis";
+
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";

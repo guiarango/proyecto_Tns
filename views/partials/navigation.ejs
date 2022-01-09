@@ -1,10 +1,10 @@
 <div class="main-header__navigation">
   <div class="main-header__initialBanner">
-    <a href="#">SUPER SALE HASTA 70% OFF 😎, ENTRA YA!</a>
+    <a href="#">SUPER SALE HASTA 70% OFF 😎, ¡ENTRA YA!</a>
   </div>
   <div class="main-header__navigation--search">
     <div class="main-header__navigation--account">
-      <i class="fas fa-user"></i>
+      <a href="#"><i class="fas fa-user"></i></a>
     </div>
     <form action="#" method="Get">
       <input
@@ -18,7 +18,7 @@
     </form>
 
     <div class="main-header__navigation--cart">
-      <i class="fas fa-shopping-cart"></i>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
     </div>
 
     <!-- HAMBURGER MENU -->
@@ -26,6 +26,7 @@
       type="checkbox"
       class="main-header__navigation--checkbox"
       id="navi-toggle"
+      onchange="onCheckBoxHamburger(this)"
     />
     <label for="navi-toggle" class="main-header__navigation--button"
       ><span class="main-header__navigation--icon">&nbsp</span></label
@@ -36,10 +37,10 @@
 
   <nav class="main-header__navigation--navBar">
     <ul>
-      <li><a href="#">Hombre</a></li>
-      <li><a href="#">Mujer</a></li>
-      <li><a href="#">Niño</a></li>
-      <li><a href="#">Niña</a></li>
+      <li><a href="#">MASCULINO</a></li>
+      <li><a href="#">FEMENINO</a></li>
+      <li><a href="#">NIÑO</a></li>
+      <li><a href="#">NIÑO</a></li>
       <li><a href="#" class="sale">SALE</a></li>
     </ul>
   </nav>

@@ -29,6 +29,15 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+
+    a {
+      text-decoration: none;
+      color: black;
+      transition: 0.4s;
+      &:hover {
+        color: rgba($color: #c2c458, $alpha: 1);
+      }
+    }
     form {
       display: flex;
       align-items: center;
@@ -50,10 +59,6 @@
     }
   }
 
-  &--navBar {
-    display: none;
-  }
-
   // HAMBURGER BUTTON
 
   &--checkbox {
@@ -68,18 +73,6 @@
     transition: 0.3s;
     transform: scale(1);
   }
-
-  // &--checkbox:checked ~ .navigation-bar {
-  //   display: block;
-  //   width: 100%;
-  //   li {
-  //     opacity: 1;
-  //     a {
-  //       animation-name: fade-in;
-  //       animation-duration: $animation-duration;
-  //     }
-  //   }
-  // }
 
   &--button,
   &--background {
@@ -125,46 +118,34 @@
     }
   }
 
-  // .navigation-bar {
-  //   position: fixed;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   font-size: 2rem;
-  //   text-align: center;
-  //   z-index: 30;
+  &--navBar {
+    display: none;
+    font-size: 2rem;
+    ul {
+      list-style: none;
 
-  //   &__list {
-  //     list-style: none;
+      li {
+        margin: 1rem 3rem;
+        .sale {
+          color: red;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
 
-  //     li {
-  //       display: block;
-  //       padding: 0rem 3rem;
-  //       opacity: 0;
-  //       padding: 2rem 0rem;
-  //       z-index: 5000;
-  //       a {
-  //         text-decoration: none;
-  //         color: $color-primary;
-  //         transition: all 0.2s linear;
-  //         color: $color-primary;
-  //         background-image: linear-gradient(
-  //           120deg,
-  //           transparent 0%,
-  //           transparent 50%,
-  //           $color-primary 50%
-  //         );
-  //         background-size: 235%;
-  //         text-transform: uppercase;
-  //         padding: 1rem;
-
-  //         &:hover {
-  //           background-position: 101%;
-  //           color: $color-secondary;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  &--checkbox:checked + .main-header__navigation--navBar {
+    display: block !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 30;
+  }
 
   &--button:hover &--icon:before {
     top: -1rem;

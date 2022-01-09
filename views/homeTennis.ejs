@@ -36,6 +36,50 @@
           </a>
         </div>
       </section>
+      <section class="productsCarrousel">
+        <h2>TE RECOMENDAMOS</h2>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <% for(let x=0;x<10;x++){%>
+              <li class="glide__slide">
+                <a href="#">
+                  <img
+                    src="images/img<%=x+1%>.jpg"
+                    alt="img<%=x+1%>"
+                    class="productImg"
+                /></a>
+              </li>
+              <%}%>
+            </ul>
+          </div>
+          <!-- <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              prev
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              next
+            </button> -->
+          </div>
+        </div>
+      </section>
     </main>
+    
+    <%- include("partials/footer")%>
+    <!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const config = {
+        type: "carousel",
+        perView: 5,
+        startAt: 0,
+        autoplay:true,
+        animationDuration:8000,
+        hoverpause:true,
+        breakpoints: { 1350: { perView: 4 }, 1165: { perView: 3 },871: { perView: 2 },579: { perView: 1 } },
+      };
+      new Glide(".glide", config).mount();
+    </script>
+    <script src="js/home.js"></script>
   </body>
 </html>
