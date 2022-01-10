@@ -11,28 +11,25 @@
 
     <main class="main">
       <section class="main__categories">
-        <div class="main__categories--man">
+        
+        <div class="main__categories--70">
           <a href="#">
-            <i class="fas fa-male male"></i>
-            <p>Hombre</p>
+            <p class="discount">70%Off</p>
           </a>
         </div>
-        <div class="main__categories--woman">
+        <div class="main__categories--50">
           <a href="#">
-            <i class="fas fa-female female"></i>
-            <p>Mujer</p>
+            <p class="discount">50%Off</p>
           </a>
         </div>
-        <div class="main__categories--boy">
+        <div class="main__categories--30">
           <a href="#">
-            <i class="fas fa-child male"></i>
-            <p>Niño</p>
+            <p class="discount">30%Off</p>
           </a>
         </div>
-        <div class="main__categories--girl">
+        <div class="main__categories--20">
           <a href="#">
-            <i class="fas fa-child female"></i>
-            <p>Niña</p>
+            <p class="discount">20%Off</p>
           </a>
         </div>
       </section>
@@ -73,9 +70,10 @@
         type: "carousel",
         perView: 5,
         startAt: 0,
+        focusar:true,
+        hoverpause:true,
         autoplay:true,
         animationDuration:8000,
-        hoverpause:true,
         breakpoints: { 1350: { perView: 4 }, 1165: { perView: 3 },871: { perView: 2 },579: { perView: 1 } },
       };
       new Glide(".glide", config).mount();

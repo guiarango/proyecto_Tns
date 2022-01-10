@@ -57,13 +57,17 @@ html {
     font-size: 8px; } }
 
 @media (min-width: 600px) {
+  html {
+    font-size: 9px; }
   .main-footer {
     display: flex;
     flex-direction: row !important;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+    .main-footer__mainContanct {
+      justify-self: self-start !important; } }
 
 .main-footer {
-  background-color: #112049;
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -84,8 +88,23 @@ html {
         transition: 0.3s; }
         .main-footer__mainContact ul li a:hover {
           color: #c2c458; }
+    .main-footer__mainContact--socialMedia {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 1rem; }
+      .main-footer__mainContact--socialMedia .fa-facebook-square {
+        color: #4267b2; }
+      .main-footer__mainContact--socialMedia .fa-instagram-square {
+        color: #e1306c; }
+      .main-footer__mainContact--socialMedia .fa-twitter-square {
+        color: #1da1f2; }
+      .main-footer__mainContact--socialMedia i {
+        margin-right: 1rem;
+        font-size: 3rem; }
   .main-footer__mainForm {
-    font-size: 2rem; }
+    font-size: 2rem;
+    padding: 1rem; }
     .main-footer__mainForm--form {
       display: flex;
       flex-direction: column; }
@@ -94,7 +113,7 @@ html {
         flex-direction: row;
         align-items: center; }
       .main-footer__mainForm--form > * {
-        margin: 0.2rem 0.5rem; }
+        margin: 0.4rem 0.5rem; }
 
 .main-header__navigation {
   position: fixed;
@@ -212,43 +231,52 @@ html {
   .main-header__navigation--checkbox:checked + .main-header__navigation--button .main-header__navigation--icon::after {
     top: 0;
     transform: rotate(-135deg); }
+  .main-header__navigation--whatsappButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    right: 4rem;
+    bottom: 3.5rem;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 300;
+    border: solid 1px black; }
+    .main-header__navigation--whatsappButton .fa-whatsapp {
+      font-size: 5rem;
+      color: #25d366; }
 
 .main-header__banner img {
   width: 100%;
   margin-top: 9rem; }
 
 section {
-  margin: 2rem 0; }
+  margin: 2rem 0;
+  padding: 2rem 0; }
 
 .main__categories {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background-color: #cacaca; }
+  .main__categories--70 a p {
+    color: red; }
   .main__categories > * {
-    height: 15rem;
-    width: 15rem;
+    height: 5rem;
+    padding: 1rem 2rem;
     margin: 1rem 3rem;
-    border-radius: 50%;
-    border: solid 1px black; }
-    .main__categories > *:hover i {
-      transform: scale(1.15); }
+    border: solid 2px black; }
+    .main__categories > *:hover p {
+      transform: scale(1.2); }
     .main__categories > * a {
       height: 100%;
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       text-align: center;
       text-decoration: none;
       color: black; }
-      .main__categories > * a .male {
-        color: #297272; }
-      .main__categories > * a .female {
-        color: #6e346e; }
-      .main__categories > * a i {
-        font-size: 5rem; }
       .main__categories > * a p {
         font-size: 2rem;
         font-weight: bold; }

@@ -7,43 +7,33 @@
 
 section {
   margin: 2rem 0;
+  padding: 2rem 0;
 }
 .main__categories {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background-color: #cacaca;
+  &--70 a p {
+    color: red;
+  }
 
   & > * {
-    height: 15rem;
-    width: 15rem;
+    height: 5rem;
+    // width: 25%;
+    padding: 1rem 2rem;
     margin: 1rem 3rem;
-    border-radius: 50%;
-    border: solid 1px black;
-    &:hover i {
-      transform: scale(1.15);
+    border: solid 2px black;
+
+    &:hover p {
+      transform: scale(1.2);
     }
     a {
       height: 100%;
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       text-align: center;
       text-decoration: none;
       color: black;
-
-      .male {
-        color: rgb(41, 114, 114);
-      }
-
-      .female {
-        color: rgb(110, 52, 110);
-      }
-      i {
-        font-size: 5rem;
-      }
       p {
         font-size: 2rem;
         font-weight: bold;

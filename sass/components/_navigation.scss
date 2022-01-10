@@ -167,4 +167,24 @@
     top: 0;
     transform: rotate(-135deg);
   }
+
+  &--whatsappButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    right: 4rem;
+    bottom: 3.5rem;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 300;
+    border: solid 1px black;
+    .fa-whatsapp {
+      font-size: 5rem;
+      color: #25d366;
+    }
+  }
 }
