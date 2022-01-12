@@ -54,11 +54,25 @@ html {
 
 @media (min-width: 520px) {
   html {
-    font-size: 8px; } }
+    font-size: 8px; }
+  .main__categories {
+    display: none !important; }
+  .main__banners {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .main__banners--50, .main__banners--30, .main__banners--2X1 {
+      width: 25rem;
+      margin: 0 3rem 1rem 0; }
+      .main__banners--50 img, .main__banners--30 img, .main__banners--2X1 img {
+        width: 100%; } }
 
 @media (min-width: 600px) {
   html {
     font-size: 9px; }
+  .main__banners--50, .main__banners--30, .main__banners--2X1 {
+    width: 28rem; }
   .main-footer {
     display: flex;
     flex-direction: row !important;
@@ -114,6 +128,10 @@ html {
         align-items: center; }
       .main-footer__mainForm--form > * {
         margin: 0.4rem 0.5rem; }
+      .main-footer__mainForm--form input,
+      .main-footer__mainForm--form button,
+      .main-footer__mainForm--form SELECT {
+        height: 3.5rem; }
 
 .main-header__navigation {
   position: fixed;
@@ -261,13 +279,13 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #cacaca; }
+  background-color: rgba(202, 202, 202, 0.1); }
   .main__categories--70 a p {
     color: red; }
   .main__categories > * {
     height: 5rem;
     padding: 1rem 2rem;
-    margin: 1rem 3rem;
+    margin: 1rem 2rem;
     border: solid 2px black; }
     .main__categories > *:hover p {
       transform: scale(1.2); }
@@ -281,9 +299,13 @@ section {
         font-size: 2rem;
         font-weight: bold; }
 
+.main__banners {
+  display: none; }
+
 .productsCarrousel {
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: rgba(202, 202, 202, 0.1); }
   .productsCarrousel h2 {
     font-size: 2rem; }
 
